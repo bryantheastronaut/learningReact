@@ -32,11 +32,12 @@ var ConfirmBattleContainer = React.createClass({
     })
   },
   render:function() {
+    console.log(this.state.playersInfo)
     return (
       <ConfirmBattle
         isLoading={this.state.isLoading}
         onInitiateBattle={this.handleInitiateBattle}
-        playersInfo={this.state.playerInfo} />
+        playersInfo={this.state.playersInfo} />
     )
   }
 });
